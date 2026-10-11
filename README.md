@@ -39,7 +39,10 @@ The source code is the `.py` / `.pyw` files in the program folder.
 законов вашей страны и правил сайтов. / Use the program only for material you have the right to download.
 You are responsible for obeying the law of your country and the terms of the sites.
 
-## Поддержать / Support
-Если программа полезна, поддержать разработку можно по ссылке, указанной в «Справка → О программе».
-Пожертвование добровольное и не даёт особых прав или закрытых функций. /
-Donations are voluntary and do not give special rights or locked features.
+## Support
+
+Программа бесплатная. Если она пригодилась, поддержать разработку можно добровольно: https://boosty.to/great_turtle/donate
+Закрытых функций за это нет.
+
+The program is free. If you find it useful, you can support its development voluntarily: https://boosty.to/great_turtle/donate
+No locked features in return.
