@@ -11,10 +11,8 @@ PyQt5 on top of yt-dlp and gallery-dl, and uses ffmpeg for merging. It is an uno
 with Hitomi Downloader, YouTube or any other site and does not use their names, icons or code.
 
 ## Скриншоты / Screenshots
-<!-- Положите файлы в папку docs/ и раскомментируйте строки ниже / Put files into docs/ and uncomment the lines below
+
 ![Очередь загрузок](docs/shot1.png)
-![Telegram-бот](docs/shot2.png)
--->
 
 ## Установка / Install
 1. Распакуйте папку / Unpack the folder.
