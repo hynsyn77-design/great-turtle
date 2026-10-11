@@ -19,7 +19,9 @@ import urllib.parse
 from dataclasses import dataclass, field, fields
 
 APP_TITLE = "Great Turtle"
-APP_VERSION = "2026.10.10.61"
+APP_VERSION = "2026.10.11.64"
+# Страница со способами поддержки: показывается в «О программе», если свою ссылку в настройках не задали
+DONATE_DEFAULT = "https://boosty.to/great_turtle/donate"
 DATA_DIR = os.path.join(os.path.expanduser("~"), ".hitomi_clone")
 STATE_FILE = os.path.join(DATA_DIR, "state.json")
 SETTINGS_FILE = os.path.join(DATA_DIR, "settings.json")

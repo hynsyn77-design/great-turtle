@@ -28,7 +28,7 @@ from PyQt5.QtWidgets import (QAbstractItemView, QAction, QApplication, QCheckBox
 
 import engine as eng
 import updater
-from core import (APP_TITLE, APP_VERSION, AUDIO_QUALITIES, DATA_DIR, DONE, DOWNLOADING, INCOMPLETE, INVALID, MODES, QUEUED, READING,
+from core import (APP_TITLE, APP_VERSION, DONATE_DEFAULT, AUDIO_QUALITIES, DATA_DIR, DONE, DOWNLOADING, INCOMPLETE, INVALID, MODES, QUEUED, READING,
                   TAGS, WAITING, Settings, TaskStore, compute_dups, fmt_duration, fmt_size, fmt_speed, task_size, select_label, select_total,
                   parse_chat_ids, tg_button_cmd, TG_ADMIN_CMDS, TG_OWNER_CMDS, TG_OWNER_HELP, TG_SITES, lock_make, lock_check, tg_site_keys, tg_site_allowed, tg_is_playlist, tg_strip_list, TG_GUEST_HELP, tg_parse, tg_list, TG_HELP, Members, PLAYLISTS_TAB, MUSIC_TAB, ERRORS_TAB, is_music, is_error, match_task, norm_url, parse_inputs, parse_range, safe_name, status_text,
                   display_order, task_in_tab, archive_key, friendly_error, TAB_ALL, order_tabs, split_keys, NAME_TEMPLATES, files_sigs, find_renamed_dirs, find_moved_files, apply_dir_renames, tr, tr_pairs, help_html, LANG)
@@ -3343,7 +3343,7 @@ class MainWindow(QMainWindow):
 
     def donate_html(self):
         """Ссылка «Поддержать разработку» в окне «О программе»: показывается, только если адрес задан в настройках."""
-        url = (self.settings.donate_url or "").strip()
+        url = (self.settings.donate_url or "").strip() or DONATE_DEFAULT
         if not re.match(r"^https?://\S+$", url, re.I):
             return ""
         from html import escape

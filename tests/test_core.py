@@ -2122,6 +2122,10 @@ class TestTelegram(unittest.TestCase):
             self.assertIn("GNU GENERAL PUBLIC LICENSE", f.read(200))
         self.assertTrue(os.path.exists(os.path.join(here, "README.md")))
 
+    def test_donate_default_link(self):
+        self.assertTrue(core.DONATE_DEFAULT.startswith("https://"))
+        self.assertEqual(core.Settings().donate_url, "")   # своя ссылка необязательна: без неё берётся DONATE_DEFAULT
+
     def test_password_lock(self):
         h = core.lock_make("секрет-123")
         self.assertNotIn("секрет", h); self.assertNotEqual(h, core.lock_make("секрет-123"))   # соль разная
